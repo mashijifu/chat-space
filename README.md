@@ -26,6 +26,21 @@
 -has_many :members
 -has_many :usrs
 
+## usersテーブル
+
+|Column|Type|Options|
+|------|----|-------|
+|message_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_ksy: true|
+|name  |string|null: false, index|
+|email|string|null: false|
+|password|string|null: false|
+
+## Association
+-has_many :members
+-belongs_to :groups
+
+
 
 
 
