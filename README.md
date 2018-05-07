@@ -41,6 +41,19 @@
 -belongs_to :groups
 
 
+## centerテーブル
+
+|Column|Type|Option|
+|------|----|------|
+|-message_id|integer|null: false, foreign_key: true|
+|-user_id|integer|null: false, foreign_key: true|
+
+
+## Association
+-has_many :message_id, through: :user_id
+-has_many :user_id, through: :message_id
+
+
 
 
 
