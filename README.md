@@ -10,48 +10,44 @@
 
 
 ### Association
-- belongs_to :group
 - belongs_to :user
-
 
 ## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|message_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
 |name|string|null: false|
 
 ## Association
--has_many :members
--has_many :users
+- has_many :messages
+- has_many :users
+- has_many :users, through: :users_groups
 
 ## usersテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|message_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_ksy: true|
 |name  |string|null: false, index|
 |email|string|null: false|
 |password|string|null: false|
 
 ## Association
--has_many :members
--belongs_to :group
+- has_many :members
+- has_many :groups
+- has_many :groups, through: :users_groups
 
 
-## messages_usersテーブル
+## users_groupsテーブル
 
 |Column|Type|Option|
 |------|----|------|
-|-message_id|integer|null: false, foreign_key: true|
-|-user_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 
 ## Association
--has_many :messages, through: :users
--has_many :users, through: :messages
+- belongs_to :user
+- belongs_to :group
 
 
 
