@@ -3,8 +3,8 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
+|group|references|null: false, foreign_key: true|
 |body  |text|
 |image |text|
 
@@ -28,7 +28,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name  |string|null: false, index|
-|email|string|null: false|
+|email|string|null: false, unique:true|
 |password|string|null: false|
 
 ## Association
