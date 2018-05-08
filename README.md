@@ -29,8 +29,8 @@
 |Column|Type|Options|
 |------|----|-------|
 |name  |string|null: false, index|
-|email|string|unique:true|
-|password|string|unique:true|
+|email|string|null: false, unique:true|
+|password|string|null: false, unique:true|
 
 ## Association
 - has_many :members
