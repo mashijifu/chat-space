@@ -5,8 +5,8 @@
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
 |group_id|integer|null: false, foreign_key: true|
-|body  |text|null: false, foreign_key: true|
-|image |text|null: false, foreign_key: true|
+|body  |text|
+|image |text|
 
 
 ### Association
@@ -20,11 +20,11 @@
 |------|----|-------|
 |message_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
-|group_name|string|null: false, foreign_key: true|
+|name|string|null: false|
 
 ## Association
 -has_many :members
--has_many :usrs
+-has_many :users
 
 ## usersテーブル
 
@@ -38,10 +38,10 @@
 
 ## Association
 -has_many :members
--belongs_to :groups
+-belongs_to :group
 
 
-## centerテーブル
+## messages_usersテーブル
 
 |Column|Type|Option|
 |------|----|------|
@@ -50,8 +50,8 @@
 
 
 ## Association
--has_many :message_id, through: :user_id
--has_many :user_id, through: :message_id
+-has_many :messages, through: :users
+-has_many :users, through: :messages
 
 
 
