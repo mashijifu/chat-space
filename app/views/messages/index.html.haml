@@ -1,0 +1,47 @@
+.header
+  %h1チャットグループが作成されました。
+  .header-space-top
+  .header-group
+    グループ
+  .header-space-center
+  .header-member
+  .header-botton
+    %input{:type => "submit", :value => "Edit", :style => "background-color:#ffffff;border-color:#38AEF0;color:#38AEF0;height:40px;width:70px;position:absolute;top:48px;right:40px;margin:0 auto"}
+.header-left
+  .header-left-user
+    name
+    .fa.fa-cog
+    .fa.fa-edit
+.sidebar
+  .sidebar-space-top
+  .sidebar-group
+  .sidebar-space-center
+  .sidebar-message
+  .sidebar-space-bottom
+.sidebar-left
+.sidebar-right
+.content
+  .content-space-bottom
+  .content-member-name
+    nakamura
+  .content-member-space
+  .content-member-message
+  .content-message-space
+.content-left
+.content-right
+.wrapper
+  .footer
+    %textarea{:name => "form-box", :cols => "100", :row => "1", :placeholder => "type a message", :style => "opacity:0.8;background-color:white;border-style:solid;border-color:gray;border-width:20px 40px;height:50px;width:calc(100vw - 395px);position:fixed;bottom:0;right:0;padding:5px;font-size:16px;color:#434A54;text-align:left;padding-left:10px;margin-top:20px"}
+
+  .form
+    .fa.fa-image
+    %input{:type => "submit", :value => "Send", :style => "background-color:#38AEF0;border-color:#38AEF0;color:white;height:60px;width:90px;padding:20px 0;position:fixed;bottom:20px;right:40px"}
+
+
+  -#%label.upload-label{for: "upload-icon"}
+    -#%i.fa.fa-picture-o
+    -#= f.file_field :image, id: "upload-icon"
+
+
+-#%link{:href => "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css", :rel => "stylesheet"}/
+-#%i.fa.fa-camera-retro

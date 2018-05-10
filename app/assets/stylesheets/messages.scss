@@ -1,0 +1,213 @@
+.header {
+        width: 800px;
+        height: 70px;
+        padding-top: 20px;
+        float: right;
+        position: fixed;
+        top: 0;
+        right: 0;
+}
+
+h1{
+  background-color: #38AEF0;
+  width: 100%;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.header-space-top {
+                  height: 35px;
+                  padding-left: 80px;
+                  position: fixed;
+                  top: 24px;
+                  left: 300px;
+                  width: 200px;
+}
+.header-group {
+              height: 20px;
+              font-size: 20px;
+              color: #333333;
+              padding-top: 35px;
+              position: fixed;
+              top: 20px;
+              left: 340px;
+              width: 100px;
+}
+.header-space-center {
+                      height: 15px;
+                      position: fixed;
+                      top: 80px;
+                      left: 300px;
+                      width: 200px;
+}
+.header-member {
+                height: 15px;
+                font-size: 12px;
+                color: #999999;
+                width: 100px;
+}
+
+.header-left {
+            background-color: #253141;
+            width: 300px;
+            height: 70px;
+            float: left;
+            padding-top: 20px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+}
+
+.header-left-user {
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: #FFFFFF;
+                  padding-left: 20px;
+                  width: 80px;
+
+}
+
+.sidebar {
+          width: 300px;
+          height: 850px;
+          float: left;
+          margin-top: 70px;
+          padding-top: 20px;
+          position: fixed;
+          top: 40px;
+          left: 0;
+          background-color: #2f3e51;
+}
+
+.sidebar-space-top {
+                    height: 20px;
+}
+.sidebar-group {
+                font-size: 15px;
+                color: #FFFFFF;
+                height: 16px;
+}
+.sidebar-space-center {
+                      height: 5px;
+}
+.sidebar-message {
+                  font-size: 11px;
+                  color: #FFFFFF;
+                  height: 12px;
+}
+.sidebar-space-bottom {
+                      height: 40px;
+}
+
+.sidebar-left {
+              height: 100%;
+              width: 20px;
+              position: fixed;
+              top: 0;
+              left: 0;
+
+}
+
+.sidebar-right {
+                height: 100%;
+                width: 20px;
+                position: fixed;
+                top: 0;
+                left: 280px;
+}
+
+
+.content {
+              background-color: #eeeeee;
+              width: calc(100vw - 300px);
+              height: 640px;
+              position: fixed;
+              top: 120px;
+              right: 0;
+}
+
+.content-space-bottom {
+                      height: 46px;
+                      width: 200px;
+}
+.content-member-name {
+                      height: 10px;
+                      padding-left: 40px;
+                      width: 200px;
+}
+.content-member-space {
+                      height: 10px;
+                      width: 200px;
+}
+.content-message-space {
+                        height: 40px;
+                        width: 200px;
+}
+
+
+.content-left {
+              height: 100%;
+              width: 40px;
+              float: right;
+              position: fixed;
+              top: 0;
+              left: 300px;
+
+}
+
+.content-right {
+              height: 100%;
+              width: 40px;
+              position: fixed;
+              top: 0;
+              right: 0;
+}
+
+.wrapper {
+          min-width: 960px;
+
+}
+.footer {
+        float: right;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+}
+
+.fa-cog{
+        color: white;
+        position: fixed;
+        top: 50px;
+        left: 260px;
+}
+
+.fa-edit {
+          color: white;
+          position: fixed;
+          top: 50px;
+          left: 240px;
+}
+
+.fa-image {
+            color: black;
+            position: fixed;
+            bottom: 50px;
+            right: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
