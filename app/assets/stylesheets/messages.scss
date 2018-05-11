@@ -1,202 +1,206 @@
+$size_zero:0;
+$size_max:100%;
+$size_ten:10px;
+$size_twenty:12px;
+$size_fifteen:15px;
+$size_sixteen:16px;
+$size_twenty:20px;
+$size_thirtyfive:35px;
+$size_forty:40px;
+$size_fifity:50px;
+$size_seventy:70px;
+$size_eighty:80px;
+$size_hundred:100px;
+$size_two_hundred:200px;
+$size_three_hundred:300px;
+$migi:right;
+$hidari:left;
+$kotei:fixed;
+$zettai:absolute;
+$siro:white;
+
+
 .header {
         width: 800px;
-        height: 70px;
-        padding-top: 20px;
-        float: right;
-        position: fixed;
-        top: 0;
-        right: 0;
-}
-
-h1{
-  background-color: #38AEF0;
-  width: 100%;
-  color: white;
-  position: fixed;
-  top: 0;
-  left: 0;
-  text-align: center;
-}
-
-.header-space-top {
-                  height: 35px;
-                  padding-left: 80px;
-                  position: fixed;
+        height: $size_seventy;
+        padding-top: $size_quarter;
+        float: $migi;
+        position: $kotei;
+        top: $size_zero;
+        right: $size_zero;
+        h1{
+                background-color: #38AEF0;
+                width: $size_twenty;
+                color: $siro
+                position: $kotei;
+                top: $size_zero;
+                left: $size_zero;
+                text-align: center;
+          }
+          .header-space-top {
+                  height: $size_thirtyfive;
+                  padding-left: $size_eighty;
+                  position: $kotei;
                   top: 24px;
-                  left: 300px;
-                  width: 200px;
-}
-.header-group {
-              height: 20px;
-              font-size: 20px;
+                  left: $size_three_hundred;
+                  width: $size_two_hundred;
+          }
+          .header-group {
+              height: $size_twenty;
+              font-size: $size_twenty;
               color: #333333;
-              padding-top: 35px;
-              position: fixed;
-              top: 20px;
+              padding-top: $size_thirtyfive;
+              position: $kotei;
+              top: $size_twenty;
               left: 340px;
-              width: 100px;
-}
-.header-space-center {
-                      height: 15px;
-                      position: fixed;
-                      top: 80px;
-                      left: 300px;
-                      width: 200px;
-}
-.header-member {
-                height: 15px;
-                font-size: 12px;
+              width: $size_hundred;
+          }
+          .header-space-center {
+                      height: $size_fifteen;
+                      position: $kotei;
+                      top: $size_eighty;
+                      left: $size_three_hundred;
+                      width: $size_two_hundred;
+          }
+          .header-member {
+                height: $size_fifteen;
+                font-size: $size_twenty;
                 color: #999999;
-                width: 100px;
+                width: $size_hundred;
+          }
 }
-
 .header-left {
-            background-color: #253141;
-            width: 300px;
-            height: 70px;
-            float: left;
-            padding-top: 20px;
-            position: absolute;
-            top: 20px;
-            left: 0;
-}
-
-.header-left-user {
-                  font-size: 16px;
+              background-color: #253141;
+              width: $size_three_hundred;
+              height: $size_seventy;
+              float: $hidari;
+              padding-top: $size_twenty;
+              position: absolute;
+              top: $size_twenty;
+              left: $size_zero;
+              .header-left-user {
+                  font-size: $size_sixteen;
                   font-weight: bold;
                   color: #FFFFFF;
-                  padding-left: 20px;
-                  width: 80px;
-
+                  padding-left: $size_twenty;
+                  width: $size_eighty;
+              }
+                    .fa-cog {
+                    color: $siro;
+                    position: $kotei;
+                    top: $size_fifity;
+                    left: 260px;
+                    }
+                    .fa-edit {
+                    color: $siro;
+                    position: $kotei;
+                    top: $size_fifity;
+                    left: 240px;
+                    }
 }
-
 .sidebar {
-          width: 300px;
+          width: $size_three_hundred;
           height: 850px;
-          float: left;
-          margin-top: 70px;
-          padding-top: 20px;
-          position: fixed;
-          top: 40px;
-          left: 0;
+          float: $hidari;
+          margin-top: $size_seventy;
+          padding-top: $size_twenty;
+          position: $kotei;
+          top: $size_forty;
+          left: $size_zero;
           background-color: #2f3e51;
-}
-
-.sidebar-space-top {
-                    height: 20px;
-}
-.sidebar-group {
-                font-size: 15px;
+          .sidebar-space-top {
+                    height: $size_twenty;
+          }
+          .sidebar-group {
+                font-size: $size_fifteen;
                 color: #FFFFFF;
-                height: 16px;
-}
-.sidebar-space-center {
+                height: $size_sixteen;
+          }
+          .sidebar-space-center {
                       height: 5px;
-}
-.sidebar-message {
+          }
+          .sidebar-message {
                   font-size: 11px;
                   color: #FFFFFF;
-                  height: 12px;
+                  height: $size_twenty;
+          }
+          .sidebar-space-bottom {
+                      height: $size_forty;
+          }
 }
-.sidebar-space-bottom {
-                      height: 40px;
-}
-
 .sidebar-left {
-              height: 100%;
-              width: 20px;
-              position: fixed;
-              top: 0;
-              left: 0;
+              height: $size_max;
+              width: $size_twenty;
+              position: $kotei;
+              top: $size_zero;
+              left: $size_zero;
 
 }
 
 .sidebar-right {
-                height: 100%;
-                width: 20px;
-                position: fixed;
-                top: 0;
+                height: size_max;
+                width: $size_twenty;
+                position: $kotei;
+                top: $size_zero;
                 left: 280px;
 }
 
 
 .content {
-              background-color: #eeeeee;
-              width: calc(100vw - 300px);
-              height: 640px;
-              position: fixed;
-              top: 120px;
-              right: 0;
-}
-
-.content-space-bottom {
+          background-color: #eeeeee;
+          width: calc(100vw - $size_three_hundred);
+          height: 640px;
+          position: $kotei;
+          top: 120px;
+          right: $size_zero;
+          .content-space-bottom {
                       height: 46px;
-                      width: 200px;
+                      width: $size_two_hundred;
+          }
+          .content-member-name {
+                      height: $size_ten;
+                      padding-left: $size_forty;
+                      width: $size_two_hundred;
+          }
+          .content-member-space {
+                      height: $size_ten;
+                      width: $size_two_hundred;
+          }
+          .content-message-space {
+                      height: $size_forty;
+                      width: $size_two_hundred;
+          }
 }
-.content-member-name {
-                      height: 10px;
-                      padding-left: 40px;
-                      width: 200px;
-}
-.content-member-space {
-                      height: 10px;
-                      width: 200px;
-}
-.content-message-space {
-                        height: 40px;
-                        width: 200px;
-}
-
-
 .content-left {
-              height: 100%;
-              width: 40px;
-              float: right;
-              position: fixed;
-              top: 0;
-              left: 300px;
-
+              height: $size_max;
+              width: $size_forty;
+              float: $migi;
+              position: $kotei;
+              top: $size_zero;
+              left: $size_three_hundred;
 }
-
 .content-right {
-              height: 100%;
-              width: 40px;
-              position: fixed;
-              top: 0;
-              right: 0;
+              height: $size_max;
+              width: $size_forty;
+              position: $kotei;
+              top: $size_zero;
+              right: $size_zero;
 }
-
 .wrapper {
           min-width: 960px;
-
-}
-.footer {
-        float: right;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        width: 100%;
-}
-
-.fa-cog{
-        color: white;
-        position: fixed;
-        top: 50px;
-        left: 260px;
-}
-
-.fa-edit {
-          color: white;
-          position: fixed;
-          top: 50px;
-          left: 240px;
-}
-
-.fa-image {
-            color: black;
-            position: fixed;
-            bottom: 50px;
-            right: 150px;
+        .footer {
+        float: $migi;
+        position: $kotei;
+        bottom: $size_zero;
+        right: $size_zero;
+        width: $size_max;
+        }
+                .fa-image {
+                color: black;
+                position: $kotei;
+                bottom: $size_fifity;
+                right: 150px;
+                }
 }
 
 
