@@ -23,15 +23,15 @@ $siro:white;
 .header {
         width: 800px;
         height: $size_seventy;
-        padding-top: $size_quarter;
+        padding-top: $size_twenty;
         float: $migi;
         position: $kotei;
         top: $size_zero;
         right: $size_zero;
-        h1{
+          h1{
                 background-color: #38AEF0;
-                width: $size_twenty;
-                color: $siro
+                width: $size_max;
+                color: $siro;
                 position: $kotei;
                 top: $size_zero;
                 left: $size_zero;
@@ -148,8 +148,8 @@ $siro:white;
 
 .content {
           background-color: #eeeeee;
-          width: calc(100vw - $size_three_hundred);
-          height: 640px;
+          width: calc(100vw - 300px);
+          height: 680px;
           position: $kotei;
           top: 120px;
           right: $size_zero;
