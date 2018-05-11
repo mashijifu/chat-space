@@ -38,29 +38,29 @@ $siro:white;
                 text-align: center;
         }
         .header-space-top {
-                  height: $size_thirtyfive;
-                  padding-left: $size_eighty;
-                  position: $kotei;
-                  top: 24px;
-                  left: $size_three_hundred;
-                  width: $size_two_hundred;
+                height: $size_thirtyfive;
+                padding-left: $size_eighty;
+                position: $kotei;
+                top: 24px;
+                left: $size_three_hundred;
+                width: $size_two_hundred;
         }
         .header-group {
-              height: $size_twenty;
-              font-size: $size_twenty;
-              color: #333333;
-              padding-top: $size_thirtyfive;
-              position: $kotei;
-              top: $size_twenty;
-              left: 340px;
-              width: $size_hundred;
+                height: $size_twenty;
+                font-size: $size_twenty;
+                color: #333333;
+                padding-top: $size_thirtyfive;
+                position: $kotei;
+                top: $size_twenty;
+                left: 340px;
+                width: $size_hundred;
         }
         .header-space-center {
-                      height: $size_fifteen;
-                      position: $kotei;
-                      top: $size_eighty;
-                      left: $size_three_hundred;
-                      width: $size_two_hundred;
+                height: $size_fifteen;
+                position: $kotei;
+                top: $size_eighty;
+                left: $size_three_hundred;
+                width: $size_two_hundred;
         }
         .header-member {
                 height: $size_fifteen;
@@ -79,11 +79,11 @@ $siro:white;
               top: $size_twenty;
               left: $size_zero;
               .header-left-user {
-                  font-size: $size_sixteen;
-                  font-weight: bold;
-                  color: #FFFFFF;
-                  padding-left: $size_twenty;
-                  width: $size_eighty;
+                    font-size: $size_sixteen;
+                    font-weight: bold;
+                    color: #FFFFFF;
+                    padding-left: $size_twenty;
+                    width: $size_eighty;
               }
                     .fa-cog {
                     color: $siro;
@@ -112,20 +112,20 @@ $siro:white;
                     height: $size_twenty;
           }
           .sidebar-group {
-                font-size: $size_fifteen;
-                color: #FFFFFF;
-                height: $size_sixteen;
+                    font-size: $size_fifteen;
+                    color: #FFFFFF;
+                    height: $size_sixteen;
           }
           .sidebar-space-center {
-                      height: 5px;
+                    height: 5px;
           }
           .sidebar-message {
-                  font-size: 11px;
-                  color: #FFFFFF;
-                  height: $size_twenty;
+                    font-size: 11px;
+                    color: #FFFFFF;
+                    height: $size_twenty;
           }
           .sidebar-space-bottom {
-                      height: $size_forty;
+                    height: $size_forty;
           }
 }
 .sidebar-left {
@@ -202,15 +202,3 @@ $siro:white;
                 right: 150px;
                 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
