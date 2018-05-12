@@ -8,27 +8,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    &__left {
-      height: 100%;
-      width: 20px;
-      position: fixed;
-      top: 0;
-      left: 0;
-    }
-    &__right {
-      height: 100%;
-      width: 20px;
-      position: fixed;
-      top: 0;
-      left: 280px;
-    }
-    &__top {
-      height: 20px;
-      width: 300px;
-      position: fixed;
-      top: 140px;
-      left: 20px;
-    }
     &__group {
       height: 20px;
       width: 300px;
@@ -38,13 +17,6 @@
       font-size: 15px;
       color: white;
     }
-    &__space {
-      height: 5px;
-      width: 300px;
-      position: fixed;
-      top: 180px;
-      left: 20px;
-    }
     .sidebar__message {
       height: 20px;
       width: 300px;
@@ -52,13 +24,6 @@
       top: 185px;
       left: 20px;
       color: white;
-    }
-    &__bottom {
-      height: 40px;
-      width: 300px;
-      position: fixed;
-      top: 205px;
-      left: 20px;
     }
   }
   .header {
@@ -90,6 +55,8 @@
           position: fixed;
           top: 48px;
           right: 40px;
+          height:40px;
+          width:70px;
         }
     }
     .header-left {
@@ -125,13 +92,6 @@
       }
     }
   }
-    &__space {
-      height: 35px;
-      width: 50%;
-      position: fixed;
-      top: 20px;
-      left: 340px;
-    }
     &__group {
       height: 25px;
       width: 50%;
@@ -141,13 +101,6 @@
       font-size: 20px;
       color: #333333;
     }
-    &__bottom {
-      height: 15px;
-      width: 50%;
-      position: fixed;
-      top: 70px;
-      left: 340px;
-          }
     &__member {
       height: 30px;
       width: 50%;
@@ -165,13 +118,6 @@
     position: fixed;
     top: 140px;
     right: 0;
-    &__space {
-      height: 46px;
-      width: 50%;
-      position: fixed;
-      top: 140px;
-      left: 340px;
-    }
     .main-content__member {
       height: 10px;
       width: 200px;
@@ -191,13 +137,6 @@
       font-size: 12px;
       color: #999999;
     }
-    &__center {
-      height: 10px;
-      width: 50%;
-      position: fixed;
-      top: 196px;
-      left: 340px;
-    }
     .main-content__message {
       height: 10px;
       width: 50%;
@@ -206,27 +145,6 @@
       left: 340px;
       font-size: 14px;
       color: $black;
-    }
-    &__bottom {
-      height: 40px;
-      width: 50%;
-      position: fixed;
-      top: 216px;
-      left: 340px;
-    }
-    &__left {
-      height: 100%;
-      width: 40px;
-      position: fixed;
-      top: 0;
-      left: 300px;
-    }
-    &__right {
-      height: 100%;
-      width: 40px;
-      position: fixed;
-      top: 0;
-      right: 0;
     }
   }
   .wrapper {
@@ -240,20 +158,6 @@
       position: fixed;
       bottom: 0;
       right: 0;
-      &__left {
-        height: 100%;
-        width: 40px;
-        position: fixed;
-        bottom: 0;
-        left: 300px;
-      }
-      &__right {
-        height: 100%;
-        width: 40px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-      }
       input {
         background-color: $blue;
         border-color: $blue;
@@ -261,6 +165,8 @@
         position: fixed;
         bottom: 20px;
         right: 40px;
+        height:50px;
+        width:90px;
       }
         .form__icon {
           height: 50px;

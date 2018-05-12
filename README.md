@@ -29,7 +29,7 @@
 |Column|Type|Options|
 |------|----|-------|
 |name  |string|null: false, index|
-|email|string|null: false, unique:tru|
+|email|string|null: false, unique:true|
 |password|string|null: false|
 
 ## Association
