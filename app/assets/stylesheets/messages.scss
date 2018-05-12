@@ -1,157 +1,156 @@
 .contents {
   height: 960px;
-  width: $size_max;
+  width: 100%;
   .sidebar {
-    height: $size_max;
-    width: $size_three_hundred;
+    height: 100%;
+    width: 300px;
     background-color: #2f3e51;
-    position: $kotei;
-    top: $size_zero;
-    left: $size_zero;
-          #{&}__left {
-            height: $size_max;
-            width: $size_twenty;
-            position: $kotei;
-            top: $size_zero;
-            left: $size_zero;
+    position: fixed;
+    top: 0;
+    left: 0;
+          &__left {
+            height: 100%;
+            width: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
           }
-          #{&}__right {
-            height: $size_max;
-            width: $size_twenty;
-            position: $kotei;
-            top: $size_zero;
+          &__right {
+            height: 100%;
+            width: 20px;
+            position: fixed;
+            top: 0;
             left: 280px;
           }
-          #{&}__top {
-            height: $size_twenty;
-            width: $size_three_hundred;
-            position: $kotei;
-            top: $size_hundred_forty;
-            left: $size_twenty;
+          &__top {
+            height: 20px;
+            width: 300px;
+            position: fixed;
+            top: 140px;
+            left: 20px;
           }
-          .sidebar__group {
-            height: $size_twenty;
-            width: $size_three_hundred;
-            position: $kotei;
+          &__group {
+            height: 20px;
+            width: 300px;
+            position: fixed;
             top: 160px;
-            left: $size_twenty;
-            font-size: $size_fifteen;
-            color: $siro;
+            left: 20px;
+            font-size: 15px;
+            color: white;
           }
-          #{&}__space {
+          &__space {
             height: 5px;
-            width: $size_three_hundred;
-            position: $kotei;
+            width: 300px;
+            position: fixed;
             top: 180px;
-            left: $size_twenty;
+            left: 20px;
           }
-          .sidebar__message {
-            height: $size_twenty;
-            width: $size_three_hundred;
-            position: $kotei;
+          &__message {
+            height: 20px;
+            width: 300px;
+            position: fixed;
             top: 185px;
-            left: $size_twenty;
+            left: 20px;
           }
-          #{&}__bottom {
-            height: $size_forty;
-            width: $size_three_hundred;
-            position: $kotei;
+          &__bottom {
+            height: 40px;
+            width: 300px;
+            position: fixed;
             top: 205px;
-            left: $size_twenty;
+            left: 20px;
           }
   }
   .header {
-    height: $size_hundred;
-    width: $size_max;
-    position: $kotei;
-    top: $size_zero;
-    left: $size_zero;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
           h1 {
             background-color: $blue;
-            width: $size_max;
-            position: $kotei;
-            top: $size_zero;
+            width: 100%;
+            position: fixed;
+            top: 0;
             text-align: center;
-            color: $siro;
+            color: white;
           }
-          .header__top {
-            padding-top: $size_twenty;
-            height: $size_hundred;
+          &__top {
+            padding-top: 20px;
+            height: 100px;
             width: calc(100vw - 300px);
-            position: $kotei;
-            top: $size_zero;
-            right: $size_zero;
+            position: fixed;
+            top: 0;
+            right: 0;
             input {
-              background-color: $siro;
-              border-style: $border;
+              background-color: white;
+              border-style: solid;
               border-color: $blue;
               color: $blue;
-              position: $kotei;
+              position: fixed;
               top: 48px;
-              right: $size_forty;
+              right: 40px;
             }
           }
-          .header-left {
+          &-left {
             background-color: #253141;
-            padding-top: $size_twenty;
-            height: $size_hundred;
-            width: $size_three_hundred;
-            position: $kotei;
-            top: $size_twenty;
-            left: $size_zero;
-            .header-left__user {
-              height: $size_twenty;
-              width: $size_hundred_fifty;
-              color: $siro;
-              font-size: $size_sixteen;
-              color: $siro;
-              position: $kotei;
-              left: $size_twenty;
+            padding-top: 20px;
+            height: 100px;
+            width: 300px;
+            position: fixed;
+            top: 20px;
+            left: 0;
+            &__user {
+              height: 20px;
+              width: 150px;
+              color: white;
+              font-size: 16px;
+              position: fixed;
+              left: 20px;
             }
-            .header-left__icon {
-              height: $size_twenty;
-              width: $size_hundred_fifty;
+            &__icon {
+              height: 20px;
+              width: 150px;
               .fa.fa-cog {
-                color: $siro;
-                position: $kotei;
-                top: $size_fifty;
+                color: white;
+                position: fixed;
+                top: 50px;
                 left: 260px;
               }
               .fa.fa-edit {
-                color: $siro;
-                position: $kotei;
-                top: $size_fifty;
+                color: white;
+                position: fixed;
+                top: 50px;
                 left: 240px;
               }
             }
           }
-          #{&}__space {
-            height: $size_thirty_five;
-            width: $size_half;
-            position: $kotei;
-            top: $size_twenty;
-            left: $size_three_hundred_forty;
+          &__space {
+            height: 35px;
+            width: 50%;
+            position: fixed;
+            top: 20px;
+            left: 340px;
           }
-          #{&}-group {
+          &-group {
             height: 25px;
-            width: $size_half;
-            position: $kotei;
+            width: 50%;
+            position: fixed;
             top: 55px;
-            left: $size_three_hundred_forty;
-            font-size: $size_twenty;
+            left: 340px;
+            font-size: 20px;
             color: #333333;
           }
-          #{&}__bottom {
-            height: $size_fifteen;
-            width: $size_half;
-            position: $kotei;
+          &__bottom {
+            height: 15px;
+            width: 50%;
+            position: fixed;
             top: 70px;
-            left: $size_three_hundred_forty;
+            left: 340px;
           }
-          .header-left__member {
+          &-left__member {
             height: 30px;
-            width: $size_half;
-            position: $kotei;
+            width: 50%;
+            position: fixed;
             top: 85px;
             left: 340px;
             font-size: 12px;
@@ -162,115 +161,115 @@
     background-color: #eeeeee;
     height: 665px;
     width: calc(100vw - 300px);
-    position: $kotei;
-    top: $size_hundred_forty;
-    right: $size_zero;
-    #{&}__space {
+    position: fixed;
+    top: 140px;
+    right: 0;
+    &__space {
       height: 46px;
-      width: $size_half;
-      position: $kotei;
-      top: $size_hundred_forty;
-      left: $size_three_hundred_forty;
+      width: 50%;
+      position: fixed;
+      top: 140px;
+      left: 340px;
     }
-    .main-content__member {
-      height: $size_ten;
-      width: $size_two_hundred;
-      position: $kotei;
-      top: $size_hundred_eighteen_six;
-      left: $size_three_hundred_forty;
-      font-size: $size_sixteen;
+    &__member {
+      height: 10px;
+      width: 200px;
+      position: fixed;
+      top: 186px;
+      left: 340px;
+      font-size: 16px;
       color: $black;
       font-weight: bold;
     }
-    .main-content__datetime {
-      height: $size_ten;
-      width: $size_two_hundred;
-      position: $kotei;
-      top: $size_hundred_eighteen_six;
+    &__datetime {
+      height: 10px;
+      width: 200px;
+      position: fixed;
+      top: 186px;
       left: 550px;
       font-size: 12px;
       color: #999999;
     }
-    #{&}__center {
-      height: $size_ten;
-      width: $size_half;
-      position: $kotei;
+    &__center {
+      height: 10px;
+      width: 50%;
+      position: fixed;
       top: 196px;
-      left: $size_three_hundred_forty;
+      left: 340px;
     }
-    .main-content__message {
-      height: $size_ten;
-      width: $size_half;
-      position: $kotei;
+    &__message {
+      height: 10px;
+      width: 50%;
+      position: fixed;
       top: 206px;
-      left: $size_three_hundred_forty;
+      left: 340px;
       font-size: 14px;
       color: $black;
     }
-    #{&}__bottom {
-      height: $size_forty;
-      width: $size_half;
-      position: $kotei;
+    &__bottom {
+      height: 40px;
+      width: 50%;
+      position: fixed;
       top: 216px;
-      left: $size_three_hundred_forty;
+      left: 340px;
     }
-    #{&}__left {
-      height: $size_max;
-      width: $size_forty;
-      position: $kotei;
-      top: $size_zero;
-      left: $size_three_hundred;
+    &__left {
+      height: 100%;
+      width: 40px;
+      position: fixed;
+      top: 0;
+      left: 300px;
     }
-    #{&}__right {
-      height: $size_max;
-      width: $size_forty;
-      position: $kotei;
-      top: $size_zero;
-      right: $size_zero;
+    &__right {
+      height: 100%;
+      width: 40px;
+      position: fixed;
+      top: 0;
+      right: 0;
     }
   }
   .wrapper {
-    min-width: $size_max;
+    min-width: 100%;
     .form {
-      height: $size_fifty;
+      height: 50px;
       width: calc(100vw - 380px);
-      border-style: $border;
-      border-width: $size_twenty $size_forty;
+      border-style: solid;
+      border-width: 20px 40px;
       border-color: gray;
-      position: $kotei;
-      bottom: $size_zero;
-      right: $size_zero;
-      #{&}__left {
-        height: $size_max;
-        width: $size_forty;
-        position: $kotei;
-        bottom: $size_zero;
-        left: $size_three_hundred;
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      &__left {
+        height: 100%;
+        width: 40px;
+        position: fixed;
+        bottom: 0;
+        left: 300px;
       }
-      #{&}__right {
-        height: $size_max;
-        width: $size_forty;
-        position: $kotei;
-        bottom: $size_zero;
-        right: $size_zero;
+      &__right {
+        height: 100%;
+        width: 40px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
       }
       input {
         background-color: $blue;
         border-color: $blue;
         color: white;
-        position: $kotei;
-        bottom: $size_twenty;
-        right: $size_forty;
+        position: fixed;
+        bottom: 20px;
+        right: 40px;
       }
-        .form__icon {
-          height: $size_fifty;
-          width: $size_twenty;
+        &__icon {
+          height: 50px;
+          width: 20px;
         }
         .fa-image {
-          position: $kotei;
+          position: fixed;
           color: black;
-          bottom: $size_thirty_five;
-          right: $size_hundred_fifty;
+          bottom: 35px;
+          right: 150px;
         }
     }
   }
