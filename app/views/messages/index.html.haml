@@ -1,40 +1,39 @@
-.header
-  %h1チャットグループが作成されました。
-  .header-space-top
-  .header-group
-    グループ
-  .header-space-center
-  .header-member
-  .header-botton
-    %input{type: "submit", value: "Edit", style: "background-color:#ffffff;border-color:#38AEF0;color:#38AEF0;height:40px;width:70px;position:absolute;top:48px;right:40px;margin:0 auto"}
-.header-left
-  .header-left-user
-    name
-    .fa.fa-cog
-    .fa.fa-edit
-.sidebar
-  .sidebar-space-top
-  .sidebar-group
-  .sidebar-space-center
-  .sidebar-message
-  .sidebar-space-bottom
-.sidebar-left
-.sidebar-right
-.content
-  .content-space-bottom
-  .content-member-name
-    nakamura
-  .content-member-space
-  .content-member-message
-  .content-message-space
-.content-left
-.content-right
-.wrapper
-  .form
-    %textarea{name: "form-box", cols: "100", row: "1", placeholder: "type a message", style: "opacity:0.8;background-color:white;border-style:solid;border-color:gray;border-width:20px 40px;height:50px;width:calc(100vw - 395px);position:fixed;bottom:0;right:0;padding:5px;font-size:16px;color:#434A54;text-align:left;padding-left:10px;margin-top:20px"}
-
-    %input{type: "submit", value: "Send", style: "background-color:#38AEF0;border-color:#38AEF0;color:white;height:60px;width:90px;padding:20px 0;position:fixed;bottom:20px;right:40px"}
-
-  .footer
-    .fa.fa-image
-
+.contents
+  .sidebar
+    .sidebar__left
+    .sidebar__right
+    .sidebar__top
+    .sidebar__group
+    .sidebar__space
+    .sidebar__message
+    .sidebar__bottom
+  .header
+    .header__top
+      %input{type: "submit", value: "Edit", style: "height:40px;width:70px"}
+    %h1 チャットグループが作成されました。
+    .header-left
+      .header-left__user name
+      .header-left__icon
+        .fa.fa-cog
+        .fa.fa-edit
+    .header__space
+    .header__group
+    .header__bottom
+    .header__member
+  .main-content
+    .main-content__space
+    .main-content__member
+    .main-content__datetime
+    .main-content__center
+    .main-content__message
+    .main-content__bottom
+    .main-content__left
+    .main-content__right
+  .wrapper
+    .form
+      .form__left
+      .form__right
+      %textarea{name: "form-box", cols: "150", row: "1", placeholder: "type a message"}
+      %input{type: "submit", value: "Send", style: "height:50px;width:90px"}
+      .form__icon
+        .fa.fa-image
