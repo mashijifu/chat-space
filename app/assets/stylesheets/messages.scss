@@ -1,275 +1,275 @@
 .contents {
-  height: 960px;
-  width: 100%;
+  height:960px;
+  width:100%;
   .sidebar {
-    height: 100%;
-    width: 300px;
-    background-color: #2f3e51;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height:100%;
+    width:300px;
+    background-color:#2f3e51;
+    position:fixed;
+    top:0;
+    left:0;
           &__left {
-            height: 100%;
-            width: 20px;
-            position: fixed;
-            top: 0;
-            left: 0;
+            height:100%;
+            width:20px;
+            position:fixed;
+            top:0;
+            left:0;
           }
           &__right {
-            height: 100%;
-            width: 20px;
-            position: fixed;
-            top: 0;
-            left: 280px;
+            height:100%;
+            width:20px;
+            position:fixed;
+            top:0;
+            left:280px;
           }
           &__top {
-            height: 20px;
-            width: 300px;
-            position: fixed;
-            top: 140px;
-            left: 20px;
+            height:20px;
+            width:300px;
+            position:fixed;
+            top:140px;
+            left:20px;
           }
           &__group {
-            height: 20px;
-            width: 300px;
-            position: fixed;
-            top: 160px;
-            left: 20px;
-            font-size: 15px;
-            color: white;
+            height:20px;
+            width:300px;
+            position:fixed;
+            top:160px;
+            left:20px;
+            font-size:15px;
+            color:white;
           }
           &__space {
-            height: 5px;
-            width: 300px;
-            position: fixed;
-            top: 180px;
-            left: 20px;
+            height:5px;
+            width:300px;
+            position:fixed;
+            top:180px;
+            left:20px;
           }
           &__message {
-            height: 20px;
-            width: 300px;
-            position: fixed;
-            top: 185px;
-            left: 20px;
+            height:20px;
+            width:300px;
+            position:fixed;
+            top:185px;
+            left:20px;
           }
           &__bottom {
-            height: 40px;
-            width: 300px;
-            position: fixed;
-            top: 205px;
-            left: 20px;
+            height:40px;
+            width:300px;
+            position:fixed;
+            top:205px;
+            left:20px;
           }
   }
   .header {
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    height:100px;
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
           h1 {
-            background-color: $blue;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            text-align: center;
-            color: white;
+            background-color:$blue;
+            width:100%;
+            position:fixed;
+            top:0;
+            text-align:center;
+            color:white;
           }
           &__top {
-            padding-top: 20px;
-            height: 100px;
-            width: calc(100vw - 300px);
-            position: fixed;
-            top: 0;
-            right: 0;
+            padding-top:20px;
+            height:100px;
+            width:calc(100vw - 300px);
+            position:fixed;
+            top:0;
+            right:0;
             input {
-              background-color: white;
-              border-style: solid;
-              border-color: $blue;
-              color: $blue;
-              position: fixed;
-              top: 48px;
-              right: 40px;
+              background-color:white;
+              border-style:solid;
+              border-color:$blue;
+              color:$blue;
+              position:fixed;
+              top:48px;
+              right:40px;
             }
           }
           &-left {
-            background-color: #253141;
-            padding-top: 20px;
-            height: 100px;
-            width: 300px;
-            position: fixed;
-            top: 20px;
-            left: 0;
+            background-color:#253141;
+            padding-top:20px;
+            height:100px;
+            width:300px;
+            position:fixed;
+            top:20px;
+            left:0;
             &__user {
-              height: 20px;
-              width: 150px;
-              color: white;
-              font-size: 16px;
-              position: fixed;
-              left: 20px;
+              height:20px;
+              width:150px;
+              color:white;
+              font-size:16px;
+              position:fixed;
+              left:20px;
             }
             &__icon {
-              height: 20px;
-              width: 150px;
+              height:20px;
+              width:150px;
               .fa.fa-cog {
-                color: white;
-                position: fixed;
-                top: 50px;
-                left: 260px;
+                color:white;
+                position:fixed;
+                top:50px;
+                left:260px;
               }
               .fa.fa-edit {
-                color: white;
-                position: fixed;
-                top: 50px;
-                left: 240px;
+                color:white;
+                position:fixed;
+                top:50px;
+                left:240px;
               }
             }
           }
           &__space {
-            height: 35px;
-            width: 50%;
-            position: fixed;
-            top: 20px;
-            left: 340px;
+            height:35px;
+            width:50%;
+            position:fixed;
+            top:20px;
+            left:340px;
           }
           &-group {
-            height: 25px;
-            width: 50%;
-            position: fixed;
-            top: 55px;
-            left: 340px;
-            font-size: 20px;
-            color: #333333;
+            height:25px;
+            width:50%;
+            position:fixed;
+            top:55px;
+            left:340px;
+            font-size:20px;
+            color:#333333;
           }
           &__bottom {
-            height: 15px;
-            width: 50%;
-            position: fixed;
-            top: 70px;
-            left: 340px;
+            height:15px;
+            width:50%;
+            position:fixed;
+            top:70px;
+            left:340px;
           }
           &-left__member {
-            height: 30px;
-            width: 50%;
-            position: fixed;
-            top: 85px;
-            left: 340px;
-            font-size: 12px;
-            color: #999999;
+            height:30px;
+            width:50%;
+            position:fixed;
+            top:85px;
+            left:340px;
+            font-size:12px;
+            color:#999999;
           }
   }
   .main-content {
-    background-color: #eeeeee;
-    height: 820px;
-    width: calc(100vw - 300px);
-    position: fixed;
-    top: 140px;
-    right: 0;
+    background-color:#eeeeee;
+    height:700px;
+    width:calc(100vw - 300px);
+    position:fixed;
+    top:140px;
+    right:0;
     &__space {
-      height: 46px;
-      width: 50%;
-      position: fixed;
-      top: 140px;
-      left: 340px;
+      height:46px;
+      width:50%;
+      position:fixed;
+      top:140px;
+      left:340px;
     }
     &__member {
-      height: 10px;
-      width: 200px;
-      position: fixed;
-      top: 186px;
-      left: 340px;
-      font-size: 16px;
-      color: $black;
-      font-weight: bold;
+      height:10px;
+      width:200px;
+      position:fixed;
+      top:186px;
+      left:340px;
+      font-size:16px;
+      color:$black;
+      font-weight:bold;
     }
     &__datetime {
-      height: 10px;
-      width: 200px;
-      position: fixed;
-      top: 186px;
-      left: 550px;
-      font-size: 12px;
-      color: #999999;
+      height:10px;
+      width:200px;
+      position:fixed;
+      top:186px;
+      left:550px;
+      font-size:12px;
+      color:#999999;
     }
     &__center {
-      height: 10px;
-      width: 50%;
-      position: fixed;
-      top: 196px;
-      left: 340px;
+      height:10px;
+      width:50%;
+      position:fixed;
+      top:196px;
+      left:340px;
     }
     &__message {
-      height: 10px;
-      width: 50%;
-      position: fixed;
-      top: 206px;
-      left: 340px;
-      font-size: 14px;
+      height:10px;
+      width:50%;
+      position:fixed;
+      top:206px;
+      left:340px;
+      font-size:14px;
       color: $black;
     }
     &__bottom {
-      height: 40px;
-      width: 50%;
-      position: fixed;
-      top: 216px;
-      left: 340px;
+      height:40px;
+      width:50%;
+      position:fixed;
+      top:216px;
+      left:340px;
     }
     &__left {
-      height: 100%;
-      width: 40px;
-      position: fixed;
-      top: 0;
-      left: 300px;
+      height:100%;
+      width:40px;
+      position:fixed;
+      top:0;
+      left:300px;
     }
     &__right {
-      height: 100%;
-      width: 40px;
-      position: fixed;
-      top: 0;
-      right: 0;
+      height:100%;
+      width:40px;
+      position:fixed;
+      top:0;
+      right:0;
     }
   }
   .wrapper {
-    min-width: 100%;
+    min-width:100%;
     .form {
-      height: 50px;
-      width: calc(100vw - 380px);
-      border-style: solid;
-      border-width: 20px 40px;
-      border-color: gray;
-      position: fixed;
-      bottom: 0;
-      right: 0;
+      height:50px;
+      width:calc(100vw - 380px);
+      border-style:solid;
+      border-width:20px 40px;
+      border-color:gray;
+      position:fixed;
+      bottom:0;
+      right:0;
       &__left {
-        height: 100%;
-        width: 40px;
-        position: fixed;
-        bottom: 0;
-        left: 300px;
+        height:100%;
+        width:40px;
+        position:fixed;
+        bottom:0;
+        left:300px;
       }
       &__right {
-        height: 100%;
-        width: 40px;
-        position: fixed;
-        bottom: 0;
-        right: 0;
+        height:100%;
+        width:40px;
+        position:fixed;
+        bottom:0;
+        right:0;
       }
       input {
-        background-color: $blue;
-        border-color: $blue;
-        color: white;
-        position: fixed;
-        bottom: 20px;
-        right: 40px;
+        background-color:$blue;
+        border-color:$blue;
+        color:white;
+        position:fixed;
+        bottom:20px;
+        right:40px;
       }
         &__icon {
-          height: 50px;
-          width: 20px;
+          height:50px;
+          width:20px;
         }
         .fa-image {
-          position: fixed;
-          color: black;
-          bottom: 35px;
-          right: 150px;
+          position:fixed;
+          color:black;
+          bottom:35px;
+          right:150px;
         }
     }
   }
