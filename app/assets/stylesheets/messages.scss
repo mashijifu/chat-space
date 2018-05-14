@@ -1,53 +1,74 @@
-.contents {
-  height: 960px;
+h1 {
   width: 100%;
-  .sidebar {
-    height: 100%;
-    width: 300px;
-    background-color: #2f3e51;
-    position: fixed;
-    top: 0;
-    left: 0;
-    &__group {
-      height: 20px;
-      width: 300px;
+  background-color: $blue;
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 0;
+}
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 20px;
+  left: 0;
+  background-color: #2f3e51;
+  color: white;
+  &_top {
+    height: 100px;
+    background-color: #253141;
+    .sidebar_top_user {
+      height: 50px;
+      width: 130px;
+      font-size: 16px;
+      font-weight: bold;
       position: fixed;
-      top: 160px;
+      top: 60px;
       left: 20px;
+    }
+    .sidebar_top_icon {
+      .fa-cog {
+      position: fixed;
+      top: 70px;
+      left: 280px;
+      }
+      .fa-edit {
+      position: fixed;
+      top: 70px;
+      left: 260px;
+      }
+    }
+  }
+  &_bottom {
+    width: 260px;
+    position: fixed;
+    top: 140px;
+    left: 20px;
+    .sidebar_bottom_group {
       font-size: 15px;
       color: white;
     }
-    .sidebar__message {
-      height: 20px;
-      width: 300px;
-      position: fixed;
-      top: 185px;
-      left: 20px;
+    .sidebar_bottom_message {
+      font-size: 11px;
       color: white;
+      padding-top: 5px;
+      margin-bottom: 40px;
     }
   }
-  .header {
-    height: 100px;
+}
+.content {
+  height: 960px;
+  width: calc(100vw - 380px);
+  position: fixed;
+  top: 20px;
+  right: 0;
+  padding-left: 40px;
+  &_top {
+    height: 60px;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    h1 {
-      background-color: $blue;
-      width: 100%;
-      position: fixed;
-      top: 0;
-      text-align: center;
-      color: white;
-    }
-    .header__top {
-      padding-top: 20px;
-      height: 100px;
-      width: calc(100vw - 300px);
-      position: fixed;
-      top: 0;
-      right: 0;
-        input {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    input {
           background-color: white;
           border-style: solid;
           border-color: $blue;
@@ -57,127 +78,86 @@
           right: 40px;
           height:40px;
           width:70px;
-        }
     }
-    .header-left {
-      background-color: #253141;
-      padding-top: 20px;
-      height: 100px;
-      width: 300px;
-      position: fixed;
-      top: 20px;
-      left: 0;
-    .header-left__user {
-      height: 20px;
-      width: 150px;
-      color: white;
-      font-size: 16px;
-      position: fixed;
-      left: 20px;
-    }
-    .header-left__icon {
-      height: 20px;
-      width: 150px;
-      .fa.fa-cog {
-        color: white;
-        position: fixed;
-        top: 50px;
-        left: 260px;
-      }
-      .fa.fa-edit {
-        color: white;
-        position: fixed;
-        top: 50px;
-        left: 240px;
-      }
-    }
-  }
-    &__group {
-      height: 25px;
-      width: 50%;
+    .content_top_group {
+      font-size: 20px;
+      color: #333333;
       position: fixed;
       top: 55px;
       left: 340px;
-      font-size: 20px;
-      color: #333333;
     }
-    &__member {
-      height: 30px;
-      width: 50%;
-      position: fixed;
-      top: 85px;
-      left: 340px;
+    .content_top_member {
       font-size: 12px;
-      color: #999999;
+      color: $gray;
+      position: fixed;
+      top: 90px;
+      left: 340px;
     }
   }
-  .main-content {
-    background-color: #eeeeee;
-    height: 900px;
-    width: calc(100vw - 300px);
+  &_main {
+    height: 835px;
+    width: calc(100vw - 380px);
     position: fixed;
-    top: 140px;
-    right: 0;
-    .main-content__member {
-      height: 10px;
-      width: 200px;
-      position: fixed;
-      top: 186px;
-      left: 340px;
+    top: 120px;
+    left: 340px;
+    .content_main_member {
       font-size: 16px;
       color: $black;
       font-weight: bold;
-    }
-    .main-content__datetime {
-      height: 10px;
-      width: 200px;
       position: fixed;
-      top: 186px;
-      left: 550px;
-      font-size: 12px;
-      color: #999999;
-    }
-    .main-content__message {
-      height: 10px;
-      width: 50%;
-      position: fixed;
-      top: 206px;
+      top: 166px;
       left: 340px;
+    }
+    .content_main_message {
       font-size: 14px;
       color: $black;
+      position: fixed;
+      top: 196px;
+      left: 340px;
+    }
+    .content_main_datetime {
+      font-size: 12px;
+      color: $gray;
+      position: fixed;
+      top: 170px;
+      left: 490px;
+      padding-left: 10px;
     }
   }
-  .wrapper {
-    min-width: 100%;
-    .form {
+  .form{
+    width: calc(100vw - 300px);
+    position: fixed;
+    padding-top: 20px;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    textarea {
       height: 50px;
-      width: calc(100vw - 380px);
+      width: calc(100vw - 300px);
       border-style: solid;
-      border-width: 20px 40px;
       border-color: gray;
+      opacity: 0.5;
+      border-width: 20px 40px;
+      line-height: 50px;
+      padding-left: 10px;
+      color:#434A54;
+      font-size: 16px;
+    }
+    input {
+      height: 50px;
+      width: 70px;
+      background-color: $blue;
+      border-color: $blue;
+      color: white;
       position: fixed;
-      bottom: 0;
-      right: 0;
-      input {
-        background-color: $blue;
-        border-color: $blue;
-        color: white;
-        position: fixed;
-        bottom: 20px;
-        right: 40px;
-        height:50px;
-        width:90px;
-      }
-        .form__icon {
-          height: 50px;
-          width: 20px;
-        }
-        .fa-image {
-          position: fixed;
-          color: black;
-          bottom: 35px;
-          right: 150px;
-        }
+      bottom: 26px;
+      right: 40px;
+    }
+    .form_icon {
+      position: fixed;
+      bottom: 35px;
+      right: 140px;
     }
   }
 }

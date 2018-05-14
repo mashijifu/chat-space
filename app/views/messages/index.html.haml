@@ -1,25 +1,24 @@
-.contents
-  .sidebar
-    .sidebar__group サンプル
-    .sidebar__message よろしくお願いします
-  .header
-    .header__top
-      %input{type: "submit", value: "Edit"}
-    %h1 チャットグループが作成されました。
-    .header-left
-      .header-left__user name
-      .header-left__icon
-        .fa.fa-cog
-        .fa.fa-edit
-    .header__group サンプル
-    .header__member Member
-  .main-content
-    .main-content__member name
-    .main-content__datetime 2017-05-13 13:31:53
-    .main-content__message 初めまして
-  .wrapper
-    .form
-      %textarea{name: "form-box", cols: "150", row: "1", placeholder: "type a message"}
-      %input{type: "submit", value: "Send"}
-      .form__icon
-        .fa.fa-image
+%h1 チャットグループが作成されました。
+.sidebar
+  .sidebar_top
+    .sidebar_top_user name
+    .sidebar_top_icon
+      .fa.fa-cog
+      .fa.fa-edit
+  .sidebar_bottom
+    .sidebar_bottom_group グループ名
+    .sidebar_bottom_message グループメッセージ
+.content
+  .content_top
+    %input{type: "submit", value: "Edit"}
+    .content_top_group sampleグループ
+    .content_top_member aaaaaaaaaaaa
+  .content_main
+    .content_main_member ruousukemaehira
+    .content_main_message なるほど
+    .content_main_datetime 2016/05/05 32:23:32
+  .form
+    %textarea{name: "form-box", cols: "120", row: "1", placeholder: "type a message"}
+    %input{type: "submit", value: "Send"}
+    .form_icon
+      .fa.fa-image
