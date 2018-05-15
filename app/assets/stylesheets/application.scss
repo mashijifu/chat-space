@@ -1,4 +1,9 @@
-@import "./reset";
+@import "reset";
+@import "config/colors";
+@import "modules/flash";
+@import "modules/group";
+@import "modules/user";
 @import "font-awesome";
-@import "variables";
-@import "./messages";
+@import "./config/variables";
+@import "messages";
+

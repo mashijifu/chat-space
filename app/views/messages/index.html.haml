@@ -1,22 +1,25 @@
-%h1 チャットグループが作成されました。
+%h1
 .sidebar
   .sidebar_top
-    .sidebar_top_user name
+    .sidebar_top_user
     .sidebar_top_icon
-      .fa.fa-cog
-      .fa.fa-edit
+      = link_to edit_user_registration_path(current_user) do
+        .fa.fa-cog
+      = link_to new_group_path(current_user) do
+        .fa.fa-edit
   .sidebar_bottom
-    .sidebar_bottom_group グループ名
-    .sidebar_bottom_message グループメッセージ
+    .sidebar_bottom_group
+    .sidebar_bottom_message
 .content
   .content_top
-    %input{type: "submit", value: "Edit"}
-    .content_top_group sampleグループ
-    .content_top_member aaaaaaaaaaaa
+    = link_to edit_user_path(current_user) do
+      %input{type: "submit", value: "Edit"}
+    .content_top_group
+    .content_top_member
   .content_main
-    .content_main_member ruousukemaehira
-    .content_main_message なるほど
-    .content_main_datetime 2016/05/05 32:23:32
+    .content_main_member
+    .content_main_message
+    .content_main_datetime
   .form
     %textarea{name: "form-box", cols: "100", row: "1", placeholder: "type a message"}
     .form_botton
