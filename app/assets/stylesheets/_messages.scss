@@ -1,11 +1,11 @@
-h1 {
-  width: 100%;
-  background-color: $blue;
-  text-align: center;
-  color: white;
-  position: fixed;
-  top: 0;
-}
+// h1 {
+//   width: 100%;
+//   background-color: $blue;
+//   text-align: center;
+//   color: white;
+//   position: fixed;
+//   top: 0;
+// }
 .sidebar {
   height: 100%;
   width: 300px;
@@ -31,11 +31,13 @@ h1 {
       position: fixed;
       top: 70px;
       left: 280px;
+      color: white;
       }
       .fa-edit {
       position: fixed;
       top: 70px;
       left: 260px;
+      color: white;
       }
     }
   }
