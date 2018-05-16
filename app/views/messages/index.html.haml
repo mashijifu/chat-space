@@ -1,18 +1,8 @@
 %h1
-.sidebar
-  .sidebar_top
-    .sidebar_top_user
-    .sidebar_top_icon
-      = link_to edit_user_registration_path(current_user) do
-        .fa.fa-cog
-      = link_to new_group_path(current_user) do
-        .fa.fa-edit
-  .sidebar_bottom
-    .sidebar_bottom_group
-    .sidebar_bottom_message
+= render 'shared/side_bar'
 .content
   .content_top
-    = link_to edit_user_path(current_user) do
+    = link_to edit_group_path(current_user) do
       %input{type: "submit", value: "Edit"}
     .content_top_group
     .content_top_member
