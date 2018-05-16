@@ -4,15 +4,13 @@
   .content_top
     = link_to edit_group_path(current_user) do
       %input{type: "submit", value: "Edit"}
-    .content_top_group
-    .content_top_member
-  .content_main
-    .content_main_member
-    .content_main_message
-    .content_main_datetime
+  .messages
+    = render @messages
   .form
-    %textarea{name: "form-box", cols: "100", row: "1", placeholder: "type a message"}
-    .form_botton
-    %input{type: "submit", value: "Send"}
-    .form_icon
-      .fa.fa-image
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      .form__mask
+        = f.label :image, class: 'form__mask__image' do
+          = fa_icon 'picture-o', class: 'icon'
+          = f.file_field :image, class: 'hidden'
+      = f.submit 'Send', class: 'form__submit'
