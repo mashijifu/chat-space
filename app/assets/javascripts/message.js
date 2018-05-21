@@ -1,0 +1,51 @@
+$(function() {
+
+var message_list = $(".messages");
+
+function buildHTML(message) {
+  var html = `<div class="message">
+                <div class="upper-message">
+                  <div class="upper-message__user-name">
+                    ${ message.user_name }
+                  </div>
+                  <div class="upper-message__date">
+                    ${ message.created_at }
+                  </div>
+                </div>
+                <div class="lower-message">
+                  <? message.content.present? ?>
+                    <p>
+                      <div class="lower-message__content">
+                        ${ message.content }
+                      </div>
+                    </p>
+                  <img scr=${message.image.url} class="lower-message__image" if message.image.present? />
+                </div>
+              </div>`
+    message_list.append(html);
+    return html
+}
+
+  $('#new_message').on("submit", function(e) {
+    e.preventDefault();
+    var url = window.location.href;
+    var formdata = new FormData(this);
+    $.ajax({
+      type: 'POST',
+      url: url,
+      data: formdata,
+      dataType: 'json',
+      contentType: false,
+      processData: false,
+      disabled: false
+    })
+    .done(function(data){
+      var html = buildHTML(data);
+      $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
+      return false;
+    })
+    .fail(function(error) {
+       alert('error');
+    })
+  });
+});
