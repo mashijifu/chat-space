@@ -1,7 +1,5 @@
 $(function() {
 
-var message_list = $(".messages");
-
 function buildHTML(message) {
   var html = `<div class="message">
                 <div class="upper-message">
@@ -22,7 +20,7 @@ function buildHTML(message) {
                   <img scr=${message.image.url} class="lower-message__image" if message.image.present? />
                 </div>
               </div>`
-    message_list.append(html);
+   var message_list = $(".messages").append(html);
     return html
 }
 

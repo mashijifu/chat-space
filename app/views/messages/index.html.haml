@@ -4,6 +4,10 @@
   .content_top
     = link_to edit_group_path(current_user) do
       %input{type: "submit", value: "Edit"}
+      .content_top_group
+        = @group.name
+      .content_top_member
+        = @group.users
   .messages
     = render @messages
   .form
