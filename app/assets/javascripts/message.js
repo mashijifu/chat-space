@@ -17,7 +17,7 @@ function buildHTML(message) {
                         ${ message.content }
                       </div>
                     </p>
-                  <img scr=${message.image.url} class="lower-message__image" if message.image.present? />
+                  <img scr=${ message.image.url } class="lower-message__image" if message.image.present? />
                 </div>
               </div>`
    var message_list = $(".messages").append(html);
