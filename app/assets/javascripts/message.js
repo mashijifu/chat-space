@@ -20,18 +20,14 @@ function buildHTML(message) {
                   <img scr=${ message.image.url } class="lower-message__image" if message.image.present? />
                 </div>
               </div>`
-   var message_list = $(".messages").append(html);
+    var message_list = $(".messages").append(html);
     return html
 }
-  $('.form__mask').on("click", function reset() {
-    var formdata = $('#new_message').reset();
-  })
 
   $('#new_message').on("submit", function(e) {
     e.preventDefault();
     var url = window.location.href;
     var formdata = new FormData(this);
-    this.reset();
     $.ajax({
       type: 'POST',
       url: url,
@@ -43,6 +39,7 @@ function buildHTML(message) {
     })
     .done(function(data){
       var html = buildHTML(data);
+      $('#message_content').val("");
       $('.messages').animate({scrollTop: $('.messages')[0].scrollHeight}, 'fast');
     })
     .fail(function(error) {
