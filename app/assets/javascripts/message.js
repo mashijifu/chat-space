@@ -39,7 +39,7 @@ function buildHTML(message) {
       dataType: 'json',
       contentType: false,
       processData: false,
-      //disabled: false
+      disabled: false
     })
     .done(function(data){
       var html = buildHTML(data);
