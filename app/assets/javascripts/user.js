@@ -1,26 +1,19 @@
 $(function() {
-
   member_list = []
-
-
-
   var add_member_list = $("#user-search-result");
 
-  function appendSearch(user) {
+  function appendSearchedUsers(user) {
     var html = `<div class="chat-group-user clearfix">
                   <p class="chat-group-user__name">${ user.name }</p>
                   <a class="user-search-add chat-group-user__btn chat-group-user__btn--add" data-user-id="${ user.user_id }" data-user-name="${ user.name }"><span class="add">追加</span></a>
                 </div>`
     add_member_list.append(html);
-    //$('.add').on('click', function() {
-    //$(this).empty();
-    //})
-    appendRemove(user);
+    appendAddedUsers(user);
   }
 
   var remove_member_list = $(".chat-group-user__name");
 
-  function appendRemove(user) {
+  function appendAddedUsers(user) {
   $('.add').on('click', function () {
   var html = `<div class='chat-group-user clearfix js-chat-member' id='chat-group-user'>
                 <input name='group[user_ids][]' type='hidden' value='${ user.user_id }'>
@@ -31,21 +24,19 @@ $(function() {
   })
   }
 
-
-function appendAdd() {
+function addedUser() {
   $('#user-search-result').on('click', function() {
     $(this).empty();
   })
 }
-  appendAdd();
+  addUser();
 
-function appendDelete() {
+function deleteUser() {
   $('.chat-group-user__name').on('click', function() {
     $(this).empty();
   })
 }
-  appendDelete();
-
+  deleteUser();
 
   $('#user-search-field').on('keyup', function() {
     var input = $('#user-search-field').val();
@@ -59,7 +50,7 @@ function appendDelete() {
       $("#user-search-result").empty();
       if (users !== 0 ) {
         users.forEach(function(user){
-        appendSearch(user);
+        appendSearchedUsers(user);
        })
       }
     })
