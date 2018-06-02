@@ -39,9 +39,12 @@
 
   .messages {
     background-color: #FAFAFA;
-    @include flexbox;
+    position: fixed;
+    bottom: 90px;
+    left: 300px;
     padding: 46px 40px 0;
-    height: calc(100% - 30px - 90px);
+    height: calc(100% - 145px - 90px);
+    width: 100%;
     overflow: scroll;
     .message {
       .upper-message {

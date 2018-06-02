@@ -1,7 +1,13 @@
 $(function() {
 
+  var message_list = $(".messages")
+
 function buildHTML(message) {
-  var html = `<div class="message">
+  var insertImage = '';
+    if (message.image.url) {
+      insertImage = `<img src="${message.image.url}">`;
+    }
+  var html = `<div class="message" data-message-id="${ message.id }">
                 <div class="upper-message">
                   <div class="upper-message__user-name">
                     ${ message.user_name }
@@ -17,10 +23,12 @@ function buildHTML(message) {
                         ${ message.content }
                       </div>
                     </p>
-                  <img scr=${ message.image.url } class="lower-message__image" if message.image.present? />
+                    <div class="lower-message__image">
+                      ${ insertImage }
+                    </div>
                 </div>
               </div>`
-    var message_list = $(".messages").append(html);
+    var message_list = $('.messages').append(html);
     return html
 }
 
@@ -48,3 +56,6 @@ function buildHTML(message) {
     return false;
   });
 });
+
+
+
