@@ -25,23 +25,20 @@ $(function() {
   }
 
   var interval = setInterval(function() {
-      var id = $('.message:last').data('messageId');
+      var lastMessageId = $('.message:last').data('messageId');
       if (window.location.pathname.match(/\/groups\/\d+\/messages/)) {
         $.ajax({
           url: location.href,
           type: 'GET',
           data: {
-            message: { id: id }
+            id :lastMessageId
          },
           dataType: 'json'
         })
         .done(function(messages) {
           messages.forEach(function(message) {
-            if (message.id > id ) {
-              var insertHTML = '';
-              insertHTML += buildHTML(message);
-            $('.messages').append(insertHTML);
-            }
+            buildHTML(message);
+            $('.messages').append(buildHTML(message));
           });
         })
       } else {

@@ -2,11 +2,11 @@ $(function() {
 
   var message_list = $(".messages")
 
-function buildHTML(message) {
-  var insertImage = '';
+  function buildHTML(message) {
+    var insertImage = '';
     if (message.image.url) {
       insertImage = `<img src="${message.image.url}">`;
-    }
+  }
   var html = `<div class="message" data-message-id="${ message.id }">
                 <div class="upper-message">
                   <div class="upper-message__user-name">
@@ -30,7 +30,7 @@ function buildHTML(message) {
               </div>`
     var message_list = $('.messages').append(html);
     return html
-}
+  }
 
   $('#new_message').on("submit", function(e) {
     e.preventDefault();
