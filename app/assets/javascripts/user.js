@@ -29,7 +29,7 @@ function addedUser() {
     $(this).empty();
   })
 }
-  addUser();
+  addedUser();
 
 function deleteUser() {
   $('.chat-group-user__name').on('click', function() {
